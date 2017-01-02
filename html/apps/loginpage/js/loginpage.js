@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	$.ajax(	"http://api.asksusi.com/aaa/login.json", {
+	$.ajax(	"https://api.asksusi.com/aaa/login.json", {
 	    data: { checkLogin: true },
 		dataType: "json",
 		success: function (response) {
@@ -30,7 +30,7 @@ $(document).ready(function()
     setRemember();
 
 	var optionsLogin = {
-        url:        "http://api.asksusi.com/aaa/login.json",
+        url:        "https://api.asksusi.com/aaa/login.json",
         type:       "get",
         dataType:   "json",
         success(response) {
@@ -48,7 +48,7 @@ $(document).ready(function()
     });
 
     var optionsLogout = {
-        url:        "http://api.asksusi.com/aaahttp://api.asksusi.com/login.json",
+        url:        "https://api.asksusi.com/aaahttps://api.asksusi.com/login.json",
         type:       "get",
         dataType:   "json",
         success(response) {

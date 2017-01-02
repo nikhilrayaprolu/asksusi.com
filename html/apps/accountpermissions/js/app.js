@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	$.ajax(	"http://api.asksusi.com/aaa/account-permissions.json", {
+	$.ajax(	"https://api.asksusi.com/aaa/account-permissions.json", {
 		dataType: "json",
 		success (response) {
 		    $("#permissions").removeClass("hidden");
@@ -19,8 +19,8 @@ $(document).ready(function()
 			return;
 		}
 	});
-http://api.asksusi.com
-	$.ajax(	"http://api.asksusi.com/aaa/account-permissions.json", {
+https://api.asksusi.com
+	$.ajax(	"https://api.asksusi.com/aaa/account-permissions.json", {
 		data: { getServiceList: true },
 		dataType: "json",
 		success (response) {
@@ -36,7 +36,7 @@ http://api.asksusi.com
 
 		if(child.attr("valueSet") === "false"){
 			child.hide();
-			$.ajax(	"http://api.asksusi.com/aaa/account-permissions.json", {
+			$.ajax(	"https://api.asksusi.com/aaa/account-permissions.json", {
 				data: { getServicePermissions: obj.attr("id") },
 				dataType: "json",
 				success (response) {

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $.ajax('http://api.asksusi.com/learning/rule.json?action=list', {
+    $.ajax('https://api.asksusi.com/learning/rule.json?action=list', {
         dataType: "json",
         success: function(response){
             for(var key in response.projects.default) {

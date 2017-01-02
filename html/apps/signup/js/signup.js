@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
 	// get password parameters
-	$.ajax(	"http://api.asksusi.com/aaa/signup.json", {
+	$.ajax(	"https://api.asksusi.com/aaa/signup.json", {
 		data: { getParameters: true },
 		dataType: "json",
 		success: function (response) {
@@ -170,7 +170,7 @@ $(document).ready(function()
 	$("#confirmpass").keyup(function(){checkConfirmPass();});
 
 	var options = {
-        url:        "http://api.asksusi.com/aaa/signup.json",
+        url:        "https://api.asksusi.com/aaa/signup.json",
         type:       "get",
         dataType:   "json",
         success(response) {

@@ -8,7 +8,7 @@ $(document).ready(function()
             $('#status-box').text("Please fill email");
         } else{
             var mail = $('#email').val();
-            $.ajax( "http://api.asksusi.com/aaa/recoverpassword.json", {
+            $.ajax( "https://api.asksusi.com/aaa/recoverpassword.json", {
                 data: { forgotemail: mail },
                 dataType: 'json',
                 success: function (response) {

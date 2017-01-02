@@ -6,7 +6,7 @@ $(document).ready(function()
 	var regex;
 	var urltoken = getParameter('token');
 
-	$.ajax(	"http://api.asksusi.com/aaa/recoverpassword.json", {
+	$.ajax(	"https://api.asksusi.com/aaa/recoverpassword.json", {
 		data: { getParameters: true, token: urltoken },
 		dataType: 'json',
 		success: function (response) {
@@ -73,7 +73,7 @@ $(document).ready(function()
 		if(!total){
 			var newpass = $('#pass').val();
 
-			$.ajax(	"http://api.asksusi.com/aaa/resetpassword.json", {
+			$.ajax(	"https://api.asksusi.com/aaa/resetpassword.json", {
 				data: { token: urltoken, newpass: newpass },
 				dataType: 'json',
 				success: function (response) {
